@@ -1,7 +1,7 @@
 # Rock-Paper-Scissors!
 A great Website that allows you to play the classic Rock-Paper-Scissors game against the computer!!
 
-**Link to project:** https://ayoskip.github.io/bomberman/
+**Link to project:** https://ayoskip.github.io/Rocks.Papers.Scissors/
 
 ## How It's Made:
 
