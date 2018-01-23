@@ -6,17 +6,17 @@ var botScore=0,
 
 document.getElementById("rock").onclick=playerThrowsRock;
 function playerThrowsRock(){
-	var botsWeapon=getRandomWeapon();
+	const botsWeapon=getRandomWeapon();
 	checkWhoWon(botsWeapon,"rock");
 }
 document.getElementById("scissors").onclick=playerThrowsScissors;
 function playerThrowsScissors(){
-	var botsWeapon=getRandomWeapon();
+	const botsWeapon=getRandomWeapon();
 	checkWhoWon(botsWeapon,"scissors");
 }
 document.getElementById("paper").onclick=playerThrowsPaper;
 function playerThrowsPaper(){
-	var botsWeapon=getRandomWeapon();
+	const botsWeapon=getRandomWeapon();
 	checkWhoWon(botsWeapon,"paper");
 }
 
@@ -61,13 +61,14 @@ function checkWhoWon(botsWeapon,playersWeapon){
 
 	if(botsWeapon==playersWeapon){
 		displayCompleteMessage("There was tie");
+		alert("Gotcha")
 	}
 	else if(
 		(botsWeapon=="scissors" && playersWeapon=="paper") ||
 		(botsWeapon=="paper" && playersWeapon=="rock") ||
 		(botsWeapon=="rock" && playersWeapon=="scissors")
 		){
-		increaseBotScore();
+		// increaseBotScore();
 	}
 	else{
 		increasePlayerScore();
